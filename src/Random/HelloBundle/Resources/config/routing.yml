@@ -1,0 +1,7 @@
+random_hello_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: RandomHelloBundle:Default:index }
+    
+random_hello_random:
+    path: /random/{limit}
+    defaults: {_controller: RandomHelloBundle:Random:index}
