@@ -1,6 +1,15 @@
 {# empty Twig template #}
-{% extends "::base.html.twig" %}
+{% extends 'RandomHelloBundle::layout.html.twig' %}
 
-{% block body %}
+{% block content %}
+    {{ dump(obj) }}
     Numero: {{ number }}!
+
+    <ul>
+        <li>Padre</li>
+        <ul>
+            <li>figlio</li>
+        </ul>
+    </ul>
+
 {% endblock %}
